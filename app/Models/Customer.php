@@ -12,7 +12,7 @@ class Customer extends Model
        'customer_id',
        'first_name',
        'last_name',
-       'fradulent',
+       'fraudulent',
        'reasons',
        'scan_id'
     ];

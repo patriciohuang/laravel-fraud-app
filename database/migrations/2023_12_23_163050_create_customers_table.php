@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('customer_id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->boolean('fradulent');
-            $table->longText('reasons');
+            $table->boolean('fraudulent');
+            $table->text('reasons');
             $table->foreignId('scan_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
