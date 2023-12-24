@@ -70,10 +70,17 @@ class ScansController extends Controller
             echo "Error";
         }
     }
-    public function viewScan() {
-        return view('scan-detail');
+    public function viewScan($id) {
+        $customers = Customer::where('scan_id', $id)
+                    ->get();
+        return view('scan-detail', [
+            'customers' => $customers
+        ]);
     }
     public function viewAllScans() {
-        return view('scan-history');
+        $scans = Scan::all();
+        return view('scan-history', [
+            'scans' => $scans
+        ]);
     }
 }

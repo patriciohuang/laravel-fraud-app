@@ -13,5 +13,6 @@ class Scan extends Model
     {
         return $this->hasMany(Customer::class);
     }
+    protected $table = 'scans';
     protected $fillable = ['fraudulent_count'];
 }
