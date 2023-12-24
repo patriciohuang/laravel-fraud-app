@@ -10,6 +10,10 @@ Welcome to the Laravel Fraud Detection Application! This application is built wi
 - [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/) (for Vite)
 
+This app uses a fake API:
+- The customer API: this API allows the app to retrieve a list of customers.
+- Use the dedicated Docker Image [vzdeveloper/customers-api](https://hub.docker.com/r/vzdeveloper/customers-api) to launch the API locally.
+
 ### Installation Steps
 
 1. Clone the repository:
@@ -22,7 +26,7 @@ Welcome to the Laravel Fraud Detection Application! This application is built wi
 2. Install PHP dependencies:
 
     ```bash
-    composer install
+    composer update
     ```
 
 3. Install Node.js dependencies:
@@ -38,16 +42,6 @@ Welcome to the Laravel Fraud Detection Application! This application is built wi
     ```
 
     Update the `DB_CONNECTION`, `DB_DATABASE`, and other relevant variables.
-    Recommended usage:
-    Run:
-    ```
-    touch database.sqlite
-    ```
-    And then in .env use:
-    ```
-    DB_CONNECTION=sqlite
-    DB_DATABASE=/full/path/to/database.sqlite
-    ```
 
 5. Generate the application key:
 
@@ -73,4 +67,4 @@ Welcome to the Laravel Fraud Detection Application! This application is built wi
     php artisan serve
     ```
 
-10. Visit [http://localhost:8000](http://localhost:8000) in your browser or if using Herd [http://laravel-fraud-app.test/](http://laravel-fraud-app.test/).
+9. Visit [http://localhost:8000](http://localhost:8000) in your browser or if using Herd [http://laravel-fraud-app.test/](http://laravel-fraud-app.test/).

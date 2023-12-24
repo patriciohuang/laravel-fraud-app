@@ -4,7 +4,7 @@
 
 @section('main')
 <main class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-center bg-gray-100 dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-  <section class="m-20">
+  <section class="m-20 text-center">
     <h2 class="text-4xl font-bold mb-6 dark:text-white">Scan History</h2>
     @if(count($scans) > 0)
       <div class="overflow-x-auto">
@@ -31,7 +31,8 @@
       </div>
     @else
     <div class="bg-[url('../img/search.png')] dark:bg-[url('../img/search-dark-mode.png')] my-24 h-64 w-64 bg-center bg-no-repeat"></div>
-    <p class="dark:text-white">There are no previous scans</p>
+    <p class="dark:text-white my-5">There are no previous scans</p>
+    <a href="/" class="text-blue-500 hover:underline">Go back to Home</a>
     @endif
   </section>
 </main>
