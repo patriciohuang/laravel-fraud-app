@@ -5,6 +5,8 @@ Welcome to the Laravel Fraud Detection Application! This application is built wi
 ## Project design
 [FigJam](https://www.figma.com/file/Z4f9Dkex9fvpd2uN1DlYNb/Laravel-fraud-app?type=whiteboard&t=NtkLMmvU2RIL2Htc-1)
 
+![image](https://github.com/patriciohuang/laravel-fraud-app/assets/125801925/b3dd7f76-e28c-4298-a26b-e6335626ea90)
+
 ## Setup Instructions
 
 ### Prerequisites
