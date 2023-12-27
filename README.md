@@ -2,6 +2,9 @@
 
 Welcome to the Laravel Fraud Detection Application! This application is built with Laravel, PHP 8.2.14, and SQLite to showcase skills with Laravel and PHP.
 
+## Project design
+[FigJam](https://www.figma.com/file/Z4f9Dkex9fvpd2uN1DlYNb/Laravel-fraud-app?type=whiteboard&t=NtkLMmvU2RIL2Htc-1)
+
 ## Setup Instructions
 
 ### Prerequisites
